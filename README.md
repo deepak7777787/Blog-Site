@@ -1,15 +1,38 @@
-# Blog-Site
 
-   -> Install Node.js from official website "https://nodejs.org/en/"-> After installation, check the version of node using the command "node -v" in command prompt/terminal
-   -> In order to install your app, first go to your workspace (desktop or a folder) and run the following command:
-     $ npx create-react-app my-app
-   -> After the installation is completed, change to the directory where your app was installed:
-     $ cd my-app
-and finally run npm start to see your app live on localhost:
-     $ npm start
-   -> Install react-router-dom using the command 
-     $ npm install react-router-dom@6
-   -> Command to fetch the data in db.json
-     $ npx json-server --watch data/db.json --port 8000
+# React App Setup Guide
 
-    
+This guide will help you set up a React application, install dependencies, and start working with a local database using JSON Server.
+
+## Prerequisites
+
+1. Install **Node.js** from the [official website](https://nodejs.org/en/).  
+2. Verify the installation by checking the version of Node.js:
+   ```bash
+   node -v
+## Steps to Create and Run Your React App
+
+1. Create a New React App. 
+Navigate to your workspace (e.g., Desktop or any folder) and run the following command:
+    ```bash 
+    npx create-react-app my-app
+2. Navigate to Your App Directory. 
+After the installation is complete, move into the newly created app directory:
+    ```bash
+    cd my-app
+3. Start Your App. 
+Run the following command to start the development server and see your app live on localhost:
+    ```bash
+    npm start
+## Install React Router
+
+1. To use routing in your app, install react-router-dom:
+    ```bash
+    npm install react-router-dom@6
+## Setting Up JSON Server
+
+1. Create a db.json file in your project folder with the data you want to use.
+
+2. Start JSON Server to fetch data from db.json:
+    ```bash
+    npx json-server --watch data/db.json --port 8000
+3. Your JSON Server will be accessible at: http://localhost:8000
